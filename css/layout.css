@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -11,8 +12,9 @@
     margin: 0 auto;
 }
 
+/* clearfix struttura */
 .clearfix::after {
-    content: '';
+        content: '';
     display: table;
     clear: both;
 }
@@ -49,17 +51,19 @@
     position: absolute;
     left: 0;
     bottom: 80px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .tags .discount { 
     background-color: red;
     margin-right: 2px;
-    padding: 2px;
+    padding: 5px;
 }
 
 .tags .attribute {
     background-color: green;
-    padding: 2px;
+    padding: 5px;
 }
 
 .product .cuore::after {
@@ -75,6 +79,7 @@
     right: 0;
 }
 
+ /* info articolo */
 .product .brand {
     font-size: 12px;
 }
@@ -82,6 +87,7 @@
 /* prezzi */
 .product .price {
     color: red;
+    font-weight: bold;
 }
 
 .product .oldprice {
